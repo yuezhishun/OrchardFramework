@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/OrchardFramework.Api/OrchardFramework.Api.csproj" />
+    <Project Path="src/OrchardFramework.Modules.Template/OrchardFramework.Modules.Template.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OrchardFramework.Api.Tests/OrchardFramework.Api.Tests.csproj" />
+  </Folder>
+</Solution>

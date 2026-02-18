@@ -1,0 +1,84 @@
+{
+  "name": "SaaS.Base",
+  "displayName": "SaaS Iteration H4 (Headless Management)",
+  "description": "Headless recipe for tenant/features/users/roles and site-settings/localization/OpenId management while CMS content features stay disabled.",
+  "author": "OrchardFramework",
+  "website": "https://pty.addai.vip/cms",
+  "version": "1.2.0",
+  "issetuprecipe": true,
+  "categories": ["SaaS", "IterationH4"],
+  "tags": ["saas", "tenants", "features", "openid", "localization", "no-cms"],
+  "steps": [
+    {
+      "name": "feature",
+      "enable": [
+        "OrchardCore.Admin",
+        "OrchardCore.Resources",
+        "OrchardCore.Themes",
+        "TheAdmin",
+        "OrchardCore.Settings",
+        "OrchardCore.Tenants",
+        "OrchardCore.Tenants.FeatureProfiles",
+        "OrchardCore.Users",
+        "OrchardCore.Roles",
+        "OrchardCore.Features",
+        "OrchardCore.Localization",
+        "OrchardCore.Apis.GraphQL",
+        "OrchardCore.OpenId",
+        "OrchardCore.OpenId.Management",
+        "OrchardCore.OpenId.Server",
+        "OrchardCore.OpenId.Validation",
+        "OrchardCore.Navigation",
+        "OrchardCore.Recipes"
+      ],
+      "disable": [
+        "OrchardCore.Contents",
+        "OrchardCore.ContentTypes",
+        "OrchardCore.ContentFields",
+        "OrchardCore.Widgets",
+        "OrchardCore.Flows",
+        "OrchardCore.Media",
+        "OrchardCore.Menu",
+        "OrchardCore.Markdown",
+        "OrchardCore.Shortcodes",
+        "OrchardCore.Html",
+        "OrchardCore.Liquid",
+        "OrchardCore.Lists",
+        "OrchardCore.Layers",
+        "OrchardCore.Alias",
+        "OrchardCore.Title",
+        "OrchardCore.HomeRoute"
+      ]
+    },
+    {
+      "name": "themes",
+      "admin": "TheAdmin"
+    },
+    {
+      "name": "featureProfiles",
+      "FeatureProfiles": [
+        {
+          "Name": "SaaSNoCms",
+          "FeatureRules": {
+            "OrchardCore.Contents": "disabled",
+            "OrchardCore.ContentTypes": "disabled",
+            "OrchardCore.ContentFields": "disabled",
+            "OrchardCore.Widgets": "disabled",
+            "OrchardCore.Flows": "disabled",
+            "OrchardCore.Media": "disabled",
+            "OrchardCore.Menu": "disabled",
+            "OrchardCore.Markdown": "disabled",
+            "OrchardCore.Shortcodes": "disabled",
+            "OrchardCore.Html": "disabled",
+            "OrchardCore.Liquid": "disabled",
+            "OrchardCore.Lists": "disabled",
+            "OrchardCore.Layers": "disabled",
+            "OrchardCore.Alias": "disabled",
+            "OrchardCore.Title": "disabled",
+            "OrchardCore.HomeRoute": "disabled"
+          }
+        }
+      ]
+    }
+  ]
+}

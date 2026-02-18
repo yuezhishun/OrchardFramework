@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlSanitizer" Version="9.1.893-beta" />
+    <PackageReference Include="OrchardCore.AutoSetup" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Apis.GraphQL" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Application.Targets" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Application.Mvc.Targets" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Admin" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Data" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Data.YesSql" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Features" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Infrastructure" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Localization" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Navigation" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.OpenId" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.OpenId.Core" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Recipes" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Resources" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Security" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Scripting" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Setup" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Settings" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Settings.Core" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Tenants" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Themes" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Users" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Roles" Version="2.2.1" />
+    <PackageReference Include="OpenIddict.Abstractions" Version="7.0.0" />
+    <PackageReference Include="TheAdmin" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Recipes\**\*.recipe.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrchardFramework.Modules.Template\OrchardFramework.Modules.Template.csproj" />
+  </ItemGroup>
+
+</Project>

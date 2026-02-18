@@ -1,0 +1,44 @@
+{
+  "name": "SaaS.Iteration0",
+  "displayName": "SaaS Iteration 0 (MVC Baseline)",
+  "description": "Iteration 0 baseline from OrchardCore.Application.Mvc.Targets with setup and site settings only.",
+  "author": "OrchardFramework",
+  "website": "https://pty.addai.vip/cms",
+  "version": "1.0.0",
+  "issetuprecipe": true,
+  "categories": ["SaaS", "Iteration0"],
+  "tags": ["saas", "baseline", "mvc"],
+  "steps": [
+    {
+      "name": "feature",
+      "enable": [
+        "OrchardCore.Settings",
+        "OrchardCore.Recipes"
+      ],
+      "disable": [
+        "OrchardCore.Admin",
+        "OrchardCore.Tenants",
+        "OrchardCore.Features",
+        "OrchardCore.Users",
+        "OrchardCore.Roles",
+        "OrchardCore.Contents",
+        "OrchardCore.ContentTypes",
+        "OrchardCore.ContentFields",
+        "OrchardCore.Widgets",
+        "OrchardCore.Flows",
+        "OrchardCore.Media",
+        "OrchardCore.Menu",
+        "OrchardCore.Navigation",
+        "OrchardCore.Markdown",
+        "OrchardCore.Shortcodes",
+        "OrchardCore.Html",
+        "OrchardCore.Liquid",
+        "OrchardCore.Lists",
+        "OrchardCore.Layers",
+        "OrchardCore.Alias",
+        "OrchardCore.Title",
+        "OrchardCore.HomeRoute"
+      ]
+    }
+  ]
+}
